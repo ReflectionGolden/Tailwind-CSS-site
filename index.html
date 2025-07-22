@@ -7,10 +7,39 @@
     <title>Tailwind CSS</title>
 </head>
 <body class="bg-zinc-900 text-gray-200">
-    <h1 class="mx-2 text-2xl font-bold">Tailwind CSS</h1>
-    <div class="mx-5 outline w-md">
+    <h1 class="mx-2 p-1 text-3xl 2xl:text-xl font-bold">Tailwind CSS</h1>
+    <div class="mx-5 my-2 px-2 py-1 w-fit max-w-9/10 lg:max-w-1/2 rounded-md bg-neutral-50/5 shadow-lg">
+        <h2 class="text-xl font-bold">Example Boxes</h2>
+        <p>
+            I have used Tailwind CSS to create a div that can be used for containing examples of making use of Tailwind.
+        </p>
+        <p>
+            For these containers, I have set them to have a horizontal margin of 5 using "mx-5" with a vertical margin of 2 using "my-2". I've also done similar with padding using "px-2" and "py-1". The width of the containers is set to fit the content out to a maximum of half of the window by using "w-fit" and "max-w-1/2". I have also given it a slightly lighter background with rounded edges using "bg-neutral-50/5" to make the background a very transparent white colour and "rounded-md" to make the courners rounded for easier viewing. Finally, I've given the container a shadow with a simple "shadow-lg".
+        </p>
+    </div>
+    <div class="mx-5 my-2 px-2 py-1 w-fit max-w-9/10 lg:max-w-1/2 rounded-md bg-neutral-50/5 shadow-lg border border-emerald-500">
+        <h2 class="text-xl font-bold">Container Border</h2>
+        <p>
+            For this specific container, I have also added a border using the colour of emerald-500. It is possible to set borders of various widths in a number of ways, you can use any of the colours available to Tailwind (and any you provide via changing the config) for borders, and it is possible to use different styles such as dashed, dotted, and double along with the default solid border.
+        </p>
+    </div>
+    <div class="mx-5 my-2 px-2 py-1 w-fit max-w-9/10 lg:max-w-1/2 rounded-md bg-neutral-50/5 shadow-lg">
+        <h2 class="text-xl font-bold sm:text-sky-500 md:text-emerald-500 lg:text-lime-500 xl:text-amber-500 2xl:text-red-500">Responsiveness</h2>
+        <p>
+            I have made alterations to the Tailwind classes for the containers to introduce responsiveness. The first change I've made is having the maximum width be 9/10 of the viewport except for if the screen is of size "md" or larger (which is defined as larger than 768px wide). This first change makes it easier to read the contents of the containers on smaller screens than if they used the same maximum width for all sizes.
+        </p>
+        <p>
+            Another change to help visualise responsiveness is that the colour of this container's title changes based on which screen zise it is being viewed with. Below "sm" (640px) the colour is the same near-white as the rest of the text, from "sm" to "md" the text colour of this container's title is changed to "sky-500", from "md" to "lg" (1024px) the colour is "emerald-500", from "lg" to "xl" (1280px) the colour is "lime-500", from "xl" to "2xl" (1536px) the colour is "amber-500", and finally from 2xl and up the colour is set to "red-500". This is useful for visualising the different screen sizes by resizing the window you are using.
+        </p>
+        <p>
+            The final change for responsiveness is that on any screen smaller than 2xl the title of the page is given the 3xl size but if the screen is bigger than 2xl it is reduced to a size of xl.
+        </p>
+    </div>
+    <div class="mx-5 my-2 px-2 py-1 w-fit max-w-9/10 lg:max-w-1/2 rounded-md bg-neutral-50/5 shadow-lg">
         <h2 class="text-xl font-bold">Lorem ipsum</h2>
-        <p>dolor sit amet</p>
+        <p>
+            Dolor sit amet
+        </p>
     </div>
 </body>
 </html>
