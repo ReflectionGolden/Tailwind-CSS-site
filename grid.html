@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>Tailwind Grid</title>
+</head>
+<body class="bg-zinc-900 text-gray-200">
+    <nav class="flex justify-center bg-neutral-50/10">
+        <a class="m-1 px-1 rounded bg-sky-800 hover:bg-blue-700" href="./index.html">Home</a>
+        <a class="m-1 px-1 rounded bg-sky-800 hover:bg-blue-700" href="./grid.html">Grid Layout</a>
+    </nav>
+    <h1 class="mx-2 p-1 text-3xl font-bold">Grid Layout for Tailwind</h1>
+    <!-- Grid container -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+        <div class="mx-5 my-2 px-2 py-1 aspect-square rounded-md bg-neutral-50/5 shadow-lg overflow-y-auto space-y-3">
+            <h2 class="text-xl font-bold">Responsive Grid Layout</h2>
+            <p>
+                This is the grid layout, with multiple containers held within a div that is set to use "grid", and is made responsive through the use of using the "sm", "lg", and "xl" prefixes so that at minimum the grid has once column, if the window is larger small or larger it shows with two columns, at large it shows 3 columns, and at extra large and up it shows 4 columns.
+            </p>
+        </div>
+        <div class="mx-5 my-2 px-2 py-1 aspect-square rounded-md bg-neutral-50/5 shadow-lg overflow-y-auto space-y-3">
+            <h2 class="text-xl font-bold">Responsive Grid Items</h2>
+            <p>
+                To go with the responsive grid, each item is set to be a square at a size that fits the screen based on the number of columns as it automatically fits the width of the column and used aspect-square to cause the height to be the same as the width. Because of this, in case the text exeeds the height of a Grid Item then it is set with overflow-y-auto so that it shows a scroll bar to see the remaining text but it doesn't include one if it isn't needed.
+            </p>
+            <p>
+                This will be demonstrated with a long instance of Lorem Ipsum in the next Grid Item.
+            </p>
+        </div>
+        <div class="mx-5 my-2 px-2 py-1 aspect-square rounded-md bg-neutral-50/5 shadow-lg overflow-y-auto space-y-3">
+            <h2 class="text-xl font-bold">Long Text Example</h2>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dignissim lectus in arcu tempus fringilla. Aliquam dignissim sapien nec arcu vehicula, vitae cursus nunc vestibulum. Nulla consequat magna convallis condimentum varius. Duis ac placerat mauris. Integer at magna quis tellus commodo dapibus. Ut ac efficitur sem, vitae sodales felis. Integer vel arcu nulla. Pellentesque dapibus iaculis vestibulum. Pellentesque ante ex, tincidunt non mattis nec, tincidunt vitae sapien. Praesent pretium egestas nibh, vitae iaculis velit.
+            </p>
+            <p>
+                Nullam aliquam sapien id mauris consequat semper. Nulla facilisi. In lacus risus, molestie nec erat at, iaculis interdum odio. Proin sodales accumsan rhoncus. Sed hendrerit aliquam nisl et eleifend. Integer ac tristique justo, sit amet convallis est. Maecenas viverra sagittis nulla nec commodo. Duis erat nibh, volutpat et elementum eu, egestas a felis. 
+            </p>
+            <p>
+                Vestibulum id augue a enim tempor scelerisque. Suspendisse eu tincidunt leo. Nam et lorem sit amet lacus porta auctor at quis nunc. Proin aliquet vel erat eget varius. Ut id mollis tellus. Praesent ut ipsum odio. Ut iaculis tincidunt placerat.
+            </p>
+            <p>
+                Suspendisse pulvinar tellus a urna molestie commodo. Phasellus in blandit tortor. Proin viverra eros sem, ac ornare mauris convallis id. Praesent volutpat, nisl iaculis tincidunt scelerisque, libero nisi lobortis massa, porttitor bibendum sem est scelerisque nisl. Suspendisse iaculis eu tortor ac bibendum. Phasellus quis bibendum sem. Donec suscipit efficitur venenatis. In a placerat lorem. Mauris tempus, lacus quis fermentum tincidunt, sem nisl vehicula augue, id commodo tellus erat eu sem. Duis sodales sit amet velit ut pretium.
+            </p>
+            <p>
+                In consequat eleifend turpis sed faucibus. Nulla interdum dolor neque, at venenatis lectus tristique non. Quisque elementum nisl sit amet nunc tristique, ut sollicitudin lorem dapibus. Praesent magna odio, rutrum a ornare vel, tempor et metus. Integer facilisis mattis nisi id ullamcorper. Maecenas quis lacinia velit. Proin rhoncus lacus ante, quis pulvinar ligula mattis et. Vivamus congue diam massa, id mattis purus rhoncus vel. Fusce nisl ligula, ornare vel lectus eu, sodales condimentum tortor. Morbi volutpat sit amet libero finibus rutrum.
+            </p>
+        </div>
+        <div class="mx-5 my-2 px-2 py-1 aspect-square rounded-md bg-neutral-50/5 shadow-lg overflow-y-auto space-y-3">
+            <h2 class="text-xl font-bold">Images in Grid Items</h2>
+            <p>
+                The following four Grid Items each contain a randomly picked image (chosen by using <a href="https://randomwordgenerator.com/picture.php" target="_blank" class="text-blue-500 underline hover:text-blue-600 visited:text-violet-800">this random picture picker</a>) to show that they are automatically sized to fit within the Grid Items.
+            </p>
+            <p>
+                This also shows the use case of using a Grid layout for a gallery within a website.
+            </p>
+        </div>
+        <div class="mx-5 my-2 px-2 py-1 aspect-square rounded-md bg-neutral-50/5 shadow-lg overflow-y-auto space-y-3">
+            <h2 class="text-xl font-bold">picture 1</h2>
+            <img src="images/locks.jpg" alt="locks attached to a bridge">
+        </div>
+        <div class="mx-5 my-2 px-2 py-1 aspect-square rounded-md bg-neutral-50/5 shadow-lg overflow-y-auto space-y-3">
+            <h2 class="text-xl font-bold">picture 2</h2>
+            <img src="images/footprints.jpg" alt="Footprints in the sand">
+        </div>
+        <div class="mx-5 my-2 px-2 py-1 aspect-square rounded-md bg-neutral-50/5 shadow-lg overflow-y-auto space-y-3">
+            <h2 class="text-xl font-bold">picture 3</h2>
+            <img src="images/lure.jpg" alt="a fish-shaped lure on some twigs">
+        </div>
+        <div class="mx-5 my-2 px-2 py-1 aspect-square rounded-md bg-neutral-50/5 shadow-lg overflow-y-auto space-y-3">
+            <h2 class="text-xl font-bold">picture 4</h2>
+            <img src="images/slide.jpg" alt="a wide slide with multiple lanes">
+        </div>
+    </div>
+</body>
+</html>

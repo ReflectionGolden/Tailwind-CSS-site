@@ -4,9 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <style type="text/tailwindcss">
+        @theme {
+            --color-aqua: #00FFFF;
+        }
+    </style>
     <title>Tailwind CSS</title>
 </head>
 <body class="bg-zinc-900 text-gray-200">
+    <nav class="flex justify-center bg-neutral-50/10">
+        <a class="m-1 px-1 rounded bg-sky-800 hover:bg-blue-700" href="./index.html">Home</a>
+        <a class="m-1 px-1 rounded bg-sky-800 hover:bg-blue-700" href="./grid.html">Grid Layout</a>
+    </nav>
     <h1 class="mx-2 p-1 text-3xl 2xl:text-xl font-bold">Tailwind CSS</h1>
     <div class="mx-5 my-2 px-2 py-1 w-fit max-w-9/10 lg:max-w-1/2 rounded-md bg-neutral-50/5 shadow-lg">
         <h2 class="text-xl font-bold">Example Boxes</h2>
@@ -33,6 +42,37 @@
         </p>
         <p>
             The final change for responsiveness is that on any screen smaller than 2xl the title of the page is given the 3xl size but if the screen is bigger than 2xl it is reduced to a size of xl.
+        </p>
+    </div>
+    <div class="my-2 px-2 py-1 border rounded flex flex-wrap">
+        <h2 class="text-xl font-bold">Flex Layout</h2>
+        <div class="mx-5 my-2 px-2 py-1 rounded-md bg-neutral-50/5 shadow-lg flex-1">
+            <h2 class="text-xl font-bold">Flexular One</h2>
+            <p>
+                The example boxes within this section on the Flex layout are set to "flex-1" in order to both balance out in terms of their size and spacing.
+            </p>
+            <br>
+            <p>
+                It is possible to change the number in "flex-1" to change the element's relative size, as "flex-2" sets the element to be twice the size of an element with "flex-1"
+            </p>
+        </div>
+        <div class="mx-5 my-2 px-2 py-1 rounded-md bg-neutral-50/5 shadow-lg flex-1">
+            <h2 class="text-xl font-bold">Flexular Two</h2>
+            <p>
+                This causes both of them to be next to each other, stretching from one side of the page to another.
+            </p>
+            <p>
+                there is also "flex-initial" which causes it to stay at the smallest size it can, plus "flex-auto" which fills any remaining space.
+            </p>
+        </div>
+    </div>
+    <div class="mx-5 my-2 px-2 py-1 w-fit max-w-9/10 lg:max-w-1/2 rounded-md bg-neutral-50/5 shadow-lg">
+        <h2 class="text-xl font-bold text-aqua">Config Customisation</h2>
+        <p>
+            It is possible to customise the tailwind configuration to do things like include a wider range of colours, such that if you are given a design that needs specific hex values for colours you can add them for use with the different utility classes. This example box has its title given the colour #00FFFF which I have named aqua.
+        </p>
+        <p>
+            It is also possible to add or change many other things such as add new font families, change the sizes related to responsiveness to other ones away from the standard, and more.
         </p>
     </div>
     <div class="mx-5 my-2 px-2 py-1 w-fit max-w-9/10 lg:max-w-1/2 rounded-md bg-neutral-50/5 shadow-lg">
